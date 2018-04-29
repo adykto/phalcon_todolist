@@ -1,0 +1,23 @@
+<h2>Add New Contact</h2>
+<?php echo $this->getContent() ?>
+
+<?php echo $this->tag->form("todolist/create") ?>
+
+	<p>
+		<label for="name">Title</label>
+		<?php echo $this->tag->textField("title") ?>
+	</p>
+
+	<p>
+		<label for="phone">Note</label>
+		<?php echo $this->tag->textField("note")?>
+	</p>
+
+	<p>
+		<?php echo $this->tag->submitButton("Create") ?>
+	</p>
+
+</form>
+
+</br>
+<?php echo $this->tag->linkTo('todolist/index/', '← Go back') ?>

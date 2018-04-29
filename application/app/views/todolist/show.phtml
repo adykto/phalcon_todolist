@@ -1,0 +1,26 @@
+<h1>show</h1>
+<?php echo $this->tag->form("todolist/update") ?>
+
+	<p>
+		<?php echo $this->tag->hiddenField("id") ?>
+	</p>
+
+	<p>
+		<label for="name">Title</label>
+		<?php echo $this->tag->textField("title") ?>
+	</p>
+
+	<p>
+		<label for="phone">Note</label>
+		<?php echo $this->tag->textField("note")?>
+	</p>
+
+
+	<p>
+		<?php echo $this->tag->submitButton("Update") ?>
+	</p>
+
+</form>
+
+</br>
+<?php echo $this->tag->linkTo('todolist/', '← Go back') ?>
